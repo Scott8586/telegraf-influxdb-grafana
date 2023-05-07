@@ -28,7 +28,7 @@ services:
       - monitoring
     volumes:
       - grafana_storage:/var/lib/grafana
-      - ./grafana-provisioning/:/etc/grafana/provisioning/
+      - ./etc/grafana/provisioning/:/etc/grafana/provisioning/
     depends_on:
       - influxdb
     environment:
